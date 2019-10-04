@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KiemtraNamNhuan</title>
+    <script type="text/javascript" src="java.js"></script>
+</head>
+<body>
+   <script>
+       let year = parseInt(prompt("Nhập năm "));
+       let isyear = false;
+
+       if(year%4==0)
+       {
+           if(year%100==0) {
+               if (year % 400 == 0) {
+                   isyear = true;
+               }
+
+           }
+           else
+           {
+               isyear=true;
+           }
+
+       }
+
+       if(isyear)
+       {
+           alert(year + " là năm nhuận");
+       }
+       else {
+           alert(year + " không là năm nhuận");
+       }
+
+   </script>
+</body>
+</html>

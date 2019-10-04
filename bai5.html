@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SKBP</title>
+</head>
+<body >
+<img id="nobita" src="1.png" style="position:absolute;left:100px; top:100px;" height="100" width="80"/>
+<script>
+   function up() {
+       let a = document.getElementById('nobita');
+       a.style.top = parseInt(a.style.top) - 5 + 'px';
+   }
+   function dow() {
+       let a = document.getElementById('nobita');
+       a.style.top = parseInt(a.style.top) + 5 + 'px';
+   }
+   function left() {
+       let a = document.getElementById('nobita');
+       a.style.left = parseInt(a.style.left) - 5 + 'px';
+   }
+   function right() {
+       let a = document.getElementById('nobita');
+       a.style.left = parseInt(a.style.left) + 5 + 'px';
+   }
+   function read(evt) {
+       switch (evt.keyCode) {
+           case 38:
+               up();
+               break;
+           case 40:
+               dow();
+               break;
+           case 37:
+               left();
+               break;
+           case 39:
+               right();
+               break;
+       }
+   }
+   function onread() {
+       window.addEventListener('keydown', read);
+   }
+   window.onload=onread;
+</script>
+
+
+
+</body>
+</html>
