@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>luyen_tap2</title>
+</head>
+<body>
+<script>
+    /* Bài1
+    let C= parseFloat(prompt("Nhập độ C: "));
+    let F;
+    F = C*(9/5)+32;
+    document.write('F = ' + F);
+     */
+
+    /* Bài2
+    let met=parseFloat(prompt("Nhập số mét: "));
+    let feet;
+    feet = met*3.2808;
+    document.write('feet = ' + feet );
+     */
+
+    /* Bài3
+    let a = parseFloat(prompt('Nhập a: '));
+    let S;
+    S=a*a;
+    if(a>0)
+    {
+       document.write('Diện tích hình vuông là: ' + S + 'm2');
+     }
+     */
+
+    /* Bài4
+    let a = parseFloat(prompt('Nhập a: '));
+    let b = parseFloat(prompt('Nhập b: '));
+    let S = a*b;
+    if(a>0&&b>0)
+    {
+    document.write('Diện tích hình chữ nhật là: ' + S + 'm2');
+     }
+     */
+
+    /* Bài5
+    let a = parseFloat(prompt('Nhập a: '));
+    let b = parseFloat(prompt('Nhập b: '));
+    let S = (a*b)/2;
+    if(a>0&&b>0)
+    {
+        document.write('Diện tích tam giác vuông là: ' + S + 'm2');
+    }
+     */
+
+    /* Bài6
+    let a = parseFloat(prompt('Nhập a: '));
+    let b = parseFloat(prompt('Nhập b: '));
+    let c = parseFloat(prompt('Nhập c: '));
+    let x;
+    // a*x+b=c
+    if(a==0)
+    {
+        document.write('Phương trình vô nghiệm');
+    }
+    else
+    {
+        document.write('Phương trình có nghiệm x = ' + (c-b)/a);
+    }
+     */
+
+    /*Bài 7
+    let a = parseFloat(prompt('Nhập a: '));
+    let b = parseFloat(prompt('Nhập b: '));
+    let c = parseFloat(prompt('Nhập c: '));
+    let d = parseFloat(prompt('Nhập d: '));
+    let x1,x2,delta;
+    delta=b*b-(4*a*c);
+    // a*(x*x) + b*x + c = d
+    if(a==0)
+    {
+        document.write('Phương trình có nghiệm x = ' + (d-c)/b);
+    }
+    else
+    {
+        if(delta<0)
+        {
+            document.write('Phương trình vô nghiệm');
+        }
+        else
+        {
+            if(delta==0)
+            {
+                document.write('Phương trình có nghiệm kép x = ' + (-b)/(2*a));
+            }
+            else
+            {
+                document.write('Phương trình có 2 nghiệm x1 =' + (-b+delta)/(2*a) + '<br>' + 'x2 =' + (-b-delta)/(2*a));
+            }
+        }
+    }
+     */
+
+    /*Bài 8
+    let tuoi = parseInt(prompt("Nhập tuổi: "));
+    if(tuoi>0&&tuoi<120)
+    {
+        alert(tuoi + ' là tuổi của một người');
+    }
+    else
+    {
+        alert(tuoi + ' không là tuổi của một người');
+    }
+     */
+
+    /* Bài 9
+    let a = parseFloat(prompt('Nhập a: '));
+    let b = parseFloat(prompt('Nhập b: '));
+    let c = parseFloat(prompt('Nhập c: '));
+    if(a>0&&b>0&&c>0)
+    {
+        if(a+b>c)
+        {
+            if(b+c>a)
+            {
+                if(a+c>b)
+                {
+                    alert('3 cạnh trên là cạnh của một tam giác');
+                }
+            }
+        }
+    }
+     */
+
+
+    /* Bài 10
+    let so_dien= parseInt(prompt('Nhập số điện: '));
+    let tien_dien;
+    if(so_dien<=50)
+    {
+        tien_dien=so_dien*1200;
+        document.write('Số tiền điện bạn phải đóng là : ' + tien_dien + ' VNĐ');
+    }
+    else
+    {
+        if(so_dien>50&&so_dien<=100)
+        {
+            tien_dien=so_dien*1500;
+            document.write('Số tiền điện bạn phải đóng là : ' + tien_dien + ' VNĐ');
+        }
+        else
+        {
+            if(so_dien>100&&so_dien<=200)
+            {
+                tien_dien=so_dien*1800;
+                document.write('Số tiền điện bạn phải đóng là : ' + tien_dien + ' VNĐ');
+            }
+            else
+            {
+                    tien_dien=so_dien*2000;
+                    document.write('Số tiền điện bạn phải đóng là : ' + tien_dien + ' VNĐ');
+
+            }
+        }
+    }
+     */
+
+     /* Bài 11
+     let thu_nhap=parseInt(prompt("Nhập tiền thu nhập cá nhân: "));
+     let thue;
+     if(thu_nhap>=4000000&&thu_nhap<=6000000)
+     {
+         thue = (thu_nhap/100)*5;
+         document.write('Thuế bạn phải đóng là : ' + thue + ' VNĐ');
+     }
+     else
+     {
+         if(thu_nhap>6000000&&thu_nhap<=9000000)
+         {
+             thue = (thu_nhap/100)*10;
+             document.write('Thuế bạn phải đóng là : ' + thue + ' VNĐ');
+         }
+         else
+         {
+             if(thu_nhap>9000000&&thu_nhap<=14000000)
+             {
+                 thue = (thu_nhap/100)*15;
+                 document.write('Thuế bạn phải đóng là : ' + thue + ' VNĐ');
+             }
+             else
+             {
+                 if(thu_nhap>14000000&&thu_nhap<=24000000)
+                 {
+                     thue = (thu_nhap/100)*20;
+                     document.write('Thuế bạn phải đóng là : ' + thue + ' VNĐ');
+                 }
+                 else
+                 {
+                     if(thu_nhap>24000000&&thu_nhap<=44000000)
+                     {
+                         thue = (thu_nhap/100)*25;
+                         document.write('Thuế bạn phải đóng là : ' + thue + ' VNĐ');
+                     }
+                     else
+                     {
+                         if(thu_nhap>44000000)
+                         {
+                             thue = (thu_nhap/100)*30;
+                             document.write('Thuế bạn phải đóng là : ' + thue + ' VNĐ');
+                         }
+                     }
+                 }
+             }
+         }
+     }
+      */
+
+
+
+     let so_tien_vay = parseInt(prompt("Nhập số tiền: "));
+     let so_thang = parseInt(prompt("Nhập số tháng: "));
+     let lai_suat = parseFloat(prompt("Nhập lãi suất: "));
+
+
+
+
+
+
+</script>
+</body>
+</html>
